@@ -7,9 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#0F766E',
-        secondary: '#16A34A',
-        accent: '#F59E0B'
+        // Palette inspired by the uploaded school logo
+        primary: '#00D3D9',   // bright cyan / aqua (logo outer ring)
+        magenta: '#D81B60',   // magenta (logo center)
+        laurel: '#1E7A2F',    // green laurel / ribbon
+        star: '#D32F2F'       // red star
       }
     }
   },
