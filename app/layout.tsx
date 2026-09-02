@@ -1,17 +1,24 @@
-import './styles/globals.css'
-import { ReactNode } from 'react'
+import type { Metadata } from "next";
+import { ReactNode } from "react";
+import "@/styles/globals.css";
 
-export const metadata = {
-  title: 'SD Negeri Sumber Waru 2 - Situs Resmi',
-  description: 'Website resmi dan sistem administrasi SD Negeri Sumber Waru 2, Pamekasan, Jawa Timur.'
-}
+export const metadata: Metadata = {
+  title: "SD Negeri Sumber Waru 2",
+  description: "Situs resmi SD Negeri Sumber Waru 2",
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
+};
 
-export default function RootLayout({ children }: { children: ReactNode }){
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="id">
-      <body className="min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-800">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="theme-color" content="#1f2937" />
+      </head>
+      <body className="bg-white text-gray-900">
         {children}
       </body>
     </html>
-  )
+  );
 }
